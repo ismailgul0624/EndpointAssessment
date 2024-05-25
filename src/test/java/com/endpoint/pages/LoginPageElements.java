@@ -16,7 +16,8 @@ public class LoginPageElements extends CommonMethods{
 	@FindBy(id = "wpPassword1")
 	public WebElement password;
 
-	@FindBy(xpath = "/html/body/div[1]/header/div[2]/nav/div[1]/div[4]/div/ul/li[2]/a/span")
+//	@FindBy(xpath = "/html/body/div[1]/header/div[2]/nav/div[1]/div[4]/div/ul/li[2]/a/span")
+	@FindBy(xpath = "//*[@id=\"wpLoginAttempt\"]")
 	public WebElement logInButton;
 	
 	public LoginPageElements() {

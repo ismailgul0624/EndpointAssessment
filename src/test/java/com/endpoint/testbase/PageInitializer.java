@@ -1,7 +1,6 @@
-package com.enpoint.testbase;
+package com.endpoint.testbase;
 
-import com.endpoint.pages.DashboardPageElements;
-import com.endpoint.pages.LoginPageElements;
+import com.endpoint.pages.*;
 
 
 public class PageInitializer extends BaseClass{

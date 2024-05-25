@@ -1,7 +1,7 @@
 package com.endpoint.steps;
 
+import com.endpoint.testbase.BaseClass;
 import com.endpoint.utils.CommonMethods;
-import com.enpoint.testbase.BaseClass;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
