@@ -35,9 +35,9 @@ public class LoginPageSteps extends CommonMethods{
 	@Then("I validate that I am logged in")
 	public void i_validate_that_i_am_logged_in() {
 		
-		String expected = "Jacqueline White";
+		String expected = "Endpoint2024";
 		String actual = dashboard.accountName.getText();
-
+		
 		if (actual.equals(expected)) {
 			System.out.println("Test Passed");
 		} else {

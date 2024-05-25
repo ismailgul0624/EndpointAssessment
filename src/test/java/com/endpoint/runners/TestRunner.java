@@ -21,7 +21,7 @@ import io.cucumber.junit.CucumberOptions;
 		tags = "@endpoint",
 
 		
-		monochrome = false,
+		monochrome = true,
 		
 		plugin = {
 				

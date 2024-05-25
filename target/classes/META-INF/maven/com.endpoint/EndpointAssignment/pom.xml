@@ -97,7 +97,7 @@
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>5.7.0</version>
+				<version>5.8.1</version>
 				<executions>
 					<execution>
 						<id>execution</id>
@@ -106,7 +106,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>CucumberFramework4</projectName>
+							<projectName>EndpointAssignment</projectName>
 
 							<!-- output directory for the generated report -->
 							<outputDirectory>${project.build.directory}</outputDirectory>

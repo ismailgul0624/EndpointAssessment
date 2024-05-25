@@ -8,10 +8,12 @@ import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.endpoint.testbase.PageInitializer;
@@ -36,6 +38,24 @@ public class CommonMethods extends PageInitializer{
 	public static void click(WebElement element) {
 		waitForClickability(element);
 		element.click();
+	}
+	
+	public static void selectDropdown(WebElement element, String visibleText) {
+		try {
+			Select sel = new Select(element);
+			sel.selectByVisibleText(visibleText);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public static void switchToFrame(int index) {
+		try {
+			driver.switchTo().frame(index);
+		} catch (NoSuchFrameException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static WebElement waitForClickability(WebElement element) {
